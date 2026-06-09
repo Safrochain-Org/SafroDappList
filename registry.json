@@ -385,7 +385,7 @@
         "soon"
       ],
       "updatedAt": "2026-04-15",
-      "url": "https://www.safrochain.com/"
+      "url": "https://eightsaf.io/"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -395,7 +395,7 @@
       ],
       "description": "Safrimba demonstrates CosmWasm usage on Safrochain: rotating savings groups with automated contribution and distribution rules. The official website highlights it in the FAQ and roadmap (beta) as a flagship product for financial inclusion.",
       "links": {
-        "docs": "https://docs.safrochain.com",
+        "docs": "https://safrimba.safrochain.com/docs",
         "x": "https://twitter.com/safrochain"
       },
       "logoPath": "apps/safrimba/img/logo.png",
@@ -414,7 +414,7 @@
         "featured"
       ],
       "updatedAt": "2026-04-15",
-      "url": "https://www.safrochain.com/",
+      "url": "https://hub.safrochain.com/",
       "version": "0.1.0-beta.1"
     },
     {
@@ -530,6 +530,58 @@
       ],
       "updatedAt": "2026-04-15",
       "url": "https://www.safrochain.com/"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "analytics",
+      "chains": [
+        "safrochain-mainnet"
+      ],
+      "description": "Valopers Mainnet Explorer, powered by Bitszn, tracks Safrochain mainnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
+      "links": {
+        "docs": "https://docs.safrochain.com"
+      },
+      "logoPath": "apps/valopersmainnet/img/logo.png",
+      "manifestPath": "apps/valopersmainnet/json/app.json",
+      "name": "Valopers Mainnet Explorer",
+      "schemaVersion": 2,
+      "shortDescription": "Mainnet block explorer powered by Bitszn for transactions, validators, chain height, and direct links to individual txs.",
+      "slug": "valopersmainnet",
+      "status": "live",
+      "submittedAt": "2026-06-09",
+      "tags": [
+        "explorer",
+        "blocks",
+        "validators"
+      ],
+      "updatedAt": "2026-06-09",
+      "url": "https://safrochain.valopers.com/"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "analytics",
+      "chains": [
+        "safrochain-testnet"
+      ],
+      "description": "Valopers Testnet Explorer, powered by Bitszn, tracks Safrochain testnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
+      "links": {
+        "docs": "https://docs.safrochain.com"
+      },
+      "logoPath": "apps/valoperstestnet/img/logo.png",
+      "manifestPath": "apps/valoperstestnet/json/app.json",
+      "name": "Valopers Testnet Explorer",
+      "schemaVersion": 2,
+      "shortDescription": "Testnet block explorer powered by Bitszn for transactions, validators, chain height, and direct links to individual txs.",
+      "slug": "valoperstestnet",
+      "status": "live",
+      "submittedAt": "2026-06-09",
+      "tags": [
+        "explorer",
+        "blocks",
+        "validators"
+      ],
+      "updatedAt": "2026-06-09",
+      "url": "https://testnet.safrochain.valopers.com/"
     }
   ],
   "featuredSlugs": [
@@ -537,6 +589,6 @@
     "safrohub",
     "faucettestnet"
   ],
-  "generatedAt": "2026-04-15",
+  "generatedAt": "2026-06-09",
   "registryVersion": 1
 }

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "valopersmainnet",
+  "name": "Valopers Mainnet Explorer",
+  "shortDescription": "Mainnet block explorer powered by Bitszn for transactions, validators, chain height, and direct links to individual txs.",
+  "description": "Valopers Mainnet Explorer, powered by Bitszn, tracks Safrochain mainnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
+  "url": "https://safrochain.valopers.com/",
+  "status": "live",
+  "chains": ["safrochain-mainnet"],
+  "category": "analytics",
+  "tags": ["explorer", "blocks", "validators"],
+  "submittedAt": "2026-06-09",
+  "updatedAt": "2026-06-09",
+  "links": {
+    "docs": "https://docs.safrochain.com"
+  }
+}
