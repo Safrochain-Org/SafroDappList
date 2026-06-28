@@ -448,7 +448,7 @@
       },
       "logoPath": "apps/pesaex/img/logo.png",
       "manifestPath": "apps/pesaex/json/app.json",
-      "name": "Pesaex (PesaX)",
+      "name": "Pesaex",
       "schemaVersion": 2,
       "shortDescription": "Crypto ↔ Mobile Money bridge for Africa — USDC on/off-ramps and cross-border transfers on Safrochain.",
       "slug": "pesaex",
@@ -456,6 +456,7 @@
       "statusNote": "Coming soon — not live yet.",
       "submittedAt": "2026-06-27",
       "tags": [
+        "featured",
         "soon",
         "payments",
         "mobile-money",
@@ -666,6 +667,7 @@
     }
   ],
   "featuredSlugs": [
+    "pesaex",
     "safrimba",
     "ekival",
     "safrohub",
