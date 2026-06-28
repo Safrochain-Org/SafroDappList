@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "safhandle",
+  "name": "Safhandle",
+  "shortDescription": "Short names and phone numbers resolve to Safrochain wallet addresses — the human-readable identity layer.",
+  "description": "Safhandle (SafHandle SDK) is the official TypeScript client for short names and phone links on Safrochain. Wallets and dApps can resolve handles like `john` or `+243899123456` to `addr_safro` addresses instead of pasting 50+ character bech32 strings.\n\nBuilt on CosmWasm registry contracts with shared validation rules for integrators. Specification and documentation phase — npm package publish follows in a later milestone.",
+  "url": "https://github.com/Safrochain-Org/safhandle-sdk",
+  "status": "concept",
+  "statusNote": "Specification / documentation phase — SDK implementation coming soon.",
+  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "category": "tooling",
+  "tags": [
+    "soon",
+    "identity",
+    "handles",
+    "sdk",
+    "cosmwasm",
+    "phone"
+  ],
+  "links": {
+    "github": "https://github.com/Safrochain-Org/safhandle-sdk",
+    "docs": "https://github.com/Safrochain-Org/safhandle-sdk/blob/main/docs/README.md"
+  },
+  "isOpenSource": true,
+  "license": "MIT",
+  "submittedAt": "2026-06-27",
+  "updatedAt": "2026-06-27"
+}

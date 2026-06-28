@@ -406,6 +406,40 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "infrastructure",
+      "chains": [
+        "safrochain-mainnet",
+        "safrochain-testnet"
+      ],
+      "description": "MoMoTrack Oracle brings Mobile Money (MoMo) transaction verification on-chain for Africa. It is a verification and provenance layer on top of licensed aggregators (PowerPay, Cotanipay, and others) — not a financial intermediary.\n\nDevelopers integrate the MoMoTrack SDK client-side; successful payments are attested with privacy-preserving proofs, validated by the oracle, and recorded immutably on Safrochain. P2P apps, remittance platforms, tontines, and DeFi protocols get cryptographic payment proof instead of manual reconciliation or screenshot disputes.",
+      "isOpenSource": true,
+      "license": "MIT",
+      "links": {
+        "docs": "https://github.com/Safrochain-Org/MoMoTrack-Oracle/blob/main/docs/HOW_IT_WORKS.md",
+        "github": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+      },
+      "logoPath": "apps/momotrack/img/logo.png",
+      "manifestPath": "apps/momotrack/json/app.json",
+      "name": "MoMoTrack",
+      "schemaVersion": 2,
+      "shortDescription": "Open-source oracle that attests Mobile Money payments on Safrochain — verifiable receipts without screenshots.",
+      "slug": "momotrack",
+      "status": "concept",
+      "statusNote": "Oracle and SDK in development — follow the repo for release announcements.",
+      "submittedAt": "2026-06-27",
+      "tags": [
+        "soon",
+        "oracle",
+        "mobile-money",
+        "verification",
+        "africa",
+        "sdk"
+      ],
+      "updatedAt": "2026-06-27",
+      "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "defi",
       "chains": [
         "safrochain-mainnet",
@@ -468,6 +502,40 @@
       ],
       "updatedAt": "2026-06-27",
       "url": "https://hub.safrochain.com/"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "tooling",
+      "chains": [
+        "safrochain-mainnet",
+        "safrochain-testnet"
+      ],
+      "description": "Safhandle (SafHandle SDK) is the official TypeScript client for short names and phone links on Safrochain. Wallets and dApps can resolve handles like `john` or `+243899123456` to `addr_safro` addresses instead of pasting 50+ character bech32 strings.\n\nBuilt on CosmWasm registry contracts with shared validation rules for integrators. Specification and documentation phase — npm package publish follows in a later milestone.",
+      "isOpenSource": true,
+      "license": "MIT",
+      "links": {
+        "docs": "https://github.com/Safrochain-Org/safhandle-sdk/blob/main/docs/README.md",
+        "github": "https://github.com/Safrochain-Org/safhandle-sdk"
+      },
+      "logoPath": "apps/safhandle/img/logo.png",
+      "manifestPath": "apps/safhandle/json/app.json",
+      "name": "Safhandle",
+      "schemaVersion": 2,
+      "shortDescription": "Short names and phone numbers resolve to Safrochain wallet addresses — the human-readable identity layer.",
+      "slug": "safhandle",
+      "status": "concept",
+      "statusNote": "Specification / documentation phase — SDK implementation coming soon.",
+      "submittedAt": "2026-06-27",
+      "tags": [
+        "soon",
+        "identity",
+        "handles",
+        "sdk",
+        "cosmwasm",
+        "phone"
+      ],
+      "updatedAt": "2026-06-27",
+      "url": "https://github.com/Safrochain-Org/safhandle-sdk"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
