@@ -436,6 +436,40 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "bridge",
+      "chains": [
+        "safrochain-mainnet",
+        "safrochain-testnet"
+      ],
+      "description": "Pesaex (PesaX) is payment infrastructure built on Safrochain — the real-world money on/off ramp for the ecosystem.\n\nIt bridges crypto and Mobile Money across Africa, allowing users to convert Mobile Money to USDC (on-ramp), USDC to Mobile Money (off-ramp), and send value across borders (e.g. Kenya ↔ Nigeria) more cheaply and quickly than traditional rails.\n\nBuilt on Safrochain with USDC from Noble via IBC. Initial focus: Kenya and Nigeria. Goal: make fiat-to-crypto and crypto-to-fiat transfers cheaper, faster, and more accessible.",
+      "links": {
+        "docs": "https://docs.safrochain.com",
+        "website": "https://hub.safrochain.com/"
+      },
+      "logoPath": "apps/pesaex/img/logo.png",
+      "manifestPath": "apps/pesaex/json/app.json",
+      "name": "Pesaex (PesaX)",
+      "schemaVersion": 2,
+      "shortDescription": "Crypto ↔ Mobile Money bridge for Africa — USDC on/off-ramps and cross-border transfers on Safrochain.",
+      "slug": "pesaex",
+      "status": "concept",
+      "statusNote": "Coming soon — not live yet.",
+      "submittedAt": "2026-06-27",
+      "tags": [
+        "soon",
+        "payments",
+        "mobile-money",
+        "usdc",
+        "fiat-ramp",
+        "ibc",
+        "kenya",
+        "nigeria"
+      ],
+      "updatedAt": "2026-06-27",
+      "url": "https://hub.safrochain.com/"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "defi",
       "chains": [
         "safrochain-mainnet"
