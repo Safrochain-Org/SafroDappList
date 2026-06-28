@@ -122,6 +122,44 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "defi",
+      "chains": [
+        "safrochain-testnet",
+        "safrochain-mainnet"
+      ],
+      "description": "Ekival is a peer-to-peer trading platform with on-chain escrow. Makers and takers match buy/sell orders; fiat is sent off-chain (mobile money, bank transfer, etc.) while crypto is locked in escrow until both sides confirm remittance and receipt.\n\nThe Safrochain deployment uses a CosmWasm port of Ekival's proven Cardano escrow state machine (CreateOrder → TakerCommit → ConfirmRemit → ConfirmReceipt). It powers fiat on-ramp and off-ramp flows for ecosystem apps such as Safrimba savings circles, with dispute resolution and configurable fees.",
+      "isOpenSource": true,
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "license": "Apache-2.0",
+      "links": {
+        "website": "https://dapp.ekival.com/"
+      },
+      "logoPath": "apps/ekival/img/logo.png",
+      "manifestPath": "apps/ekival/json/app.json",
+      "name": "Ekival",
+      "schemaVersion": 2,
+      "shortDescription": "P2P escrow for fiat ↔ crypto trades — collateral-backed settlement for mobile money and local payment rails.",
+      "slug": "ekival",
+      "status": "beta",
+      "statusNote": "Live P2P product on Cardano; Safrochain CosmWasm escrow on testnet with mainnet at launch.",
+      "submittedAt": "2026-06-27",
+      "tags": [
+        "p2p",
+        "escrow",
+        "cosmwasm",
+        "mobile-money",
+        "fiat-ramp",
+        "featured"
+      ],
+      "updatedAt": "2026-06-27",
+      "url": "https://dapp.ekival.com/",
+      "version": "0.1.0"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "analytics",
       "chains": [
         "safrochain-testnet"
@@ -595,9 +633,10 @@
   ],
   "featuredSlugs": [
     "safrimba",
+    "ekival",
     "safrohub",
     "faucettestnet"
   ],
-  "generatedAt": "2026-06-11",
+  "generatedAt": "2026-06-27",
   "registryVersion": 1
 }
