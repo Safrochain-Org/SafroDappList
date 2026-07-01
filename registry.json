@@ -702,8 +702,8 @@
       "schemaVersion": 2,
       "shortDescription": "Non-custodial K-of-N threshold multisig for Safrochain teams — queue, sign, simulate, and execute treasury transactions.",
       "slug": "smultisig",
-      "status": "beta",
-      "statusNote": "Live on Safrochain testnet; mainnet deployment at https://smultisig.safrochain.com.",
+      "status": "live",
+      "statusNote": "Available on Safrochain testnet and mainnet (https://smultisig.safrochain.com).",
       "submittedAt": "2026-06-28",
       "tags": [
         "multisig",
@@ -714,7 +714,7 @@
         "cosmos",
         "featured"
       ],
-      "updatedAt": "2026-06-28",
+      "updatedAt": "2026-06-29",
       "url": "https://smultisig-testnet.safrochain.com",
       "version": "0.1.1-beta"
     },
@@ -776,8 +776,9 @@
     "safrimba",
     "ekival",
     "safrohub",
-    "eightsaf"
+    "eightsaf",
+    "smultisig"
   ],
-  "generatedAt": "2026-06-28",
+  "generatedAt": "2026-06-29",
   "registryVersion": 1
 }
