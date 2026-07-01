@@ -164,7 +164,7 @@
       "chains": [
         "safrochain-testnet"
       ],
-      "description": "The testnet explorer lets you track on-chain activity in real time — accounts, delegations, SAF transfers, and Cosmos SDK messages. It is the go-to tool for debugging integrations before mainnet (explorer.testnet.safrochain.com).",
+      "description": "The testnet explorer lets you track on-chain activity in real time — accounts, delegations, SAF transfers, and Cosmos SDK messages. It is the go-to tool for debugging integrations before mainnet (testnet.safrochain.network).",
       "links": {
         "docs": "https://docs.safrochain.com"
       },
@@ -182,7 +182,7 @@
         "validators"
       ],
       "updatedAt": "2026-04-15",
-      "url": "https://explorer.testnet.safrochain.com/"
+      "url": "https://testnet.safrochain.network/"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -683,6 +683,43 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "wallet",
+      "chains": [
+        "safrochain-testnet",
+        "safrochain-mainnet"
+      ],
+      "description": "SMultisig is a non-custodial threshold multisignature wallet for teams, DAOs, and treasuries on Safrochain. Configure any K-of-N quorum with Cosmos SDK LegacyAmino multisig, compatible with Keplr, Leap, and Cosmostation.\n\nDraft transactions off-chain with titles, memos, and fees; each signer approves the same SignDoc in their wallet. Simulate before broadcast, collect partial signatures, and submit when the threshold is met. The app coordinates drafts, roles, and metadata in a private collaboration layer — wallets hold the only private keys.\n\nSupports native SAF, IBC tokens, and Token Factory denoms with auto-resolved symbols and icons. Sign in with ADR-036 wallet auth, role-based access for managers/signers/viewers, SignDoc verification, and encrypted multisig backups for recovery.",
+      "languages": [
+        "en"
+      ],
+      "links": {
+        "website": "https://smultisig-testnet.safrochain.com",
+        "x": "https://twitter.com/safrochain"
+      },
+      "logoPath": "apps/smultisig/img/logo.png",
+      "manifestPath": "apps/smultisig/json/app.json",
+      "name": "SMultisig",
+      "schemaVersion": 2,
+      "shortDescription": "Non-custodial K-of-N threshold multisig for Safrochain teams — queue, sign, simulate, and execute treasury transactions.",
+      "slug": "smultisig",
+      "status": "beta",
+      "statusNote": "Live on Safrochain testnet; mainnet deployment at https://smultisig.safrochain.com.",
+      "submittedAt": "2026-06-28",
+      "tags": [
+        "multisig",
+        "treasury",
+        "dao",
+        "threshold",
+        "keplr",
+        "cosmos",
+        "featured"
+      ],
+      "updatedAt": "2026-06-28",
+      "url": "https://smultisig-testnet.safrochain.com",
+      "version": "0.1.1-beta"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "analytics",
       "chains": [
         "safrochain-mainnet"
@@ -741,6 +778,6 @@
     "safrohub",
     "eightsaf"
   ],
-  "generatedAt": "2026-06-27",
+  "generatedAt": "2026-06-28",
   "registryVersion": 1
 }
