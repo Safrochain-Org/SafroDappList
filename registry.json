@@ -776,7 +776,7 @@
       "chains": [
         "safrochain-testnet"
       ],
-      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap — no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; the live testnet deployment settles ticket sales and prize claims in SAF.",
+      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap with no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; the live testnet deployment settles ticket sales and prize claims in SAF.",
       "isOpenSource": true,
       "languages": [
         "en",
@@ -795,7 +795,7 @@
       "manifestPath": "apps/winsaf/json/app.json",
       "name": "WinSaf",
       "schemaVersion": 2,
-      "shortDescription": "Provably-fair on-chain lottery in Telegram — non-custodial MPC wallet, CosmWasm draws, SAF prizes.",
+      "shortDescription": "Provably-fair on-chain lottery in Telegram with a non-custodial MPC wallet, CosmWasm draws, and SAF prizes.",
       "slug": "winsaf",
       "status": "live",
       "statusNote": "Available on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
