@@ -8,8 +8,8 @@
   "url": "https://winsaf.xyz/",
   "version": "1.0.0",
   "launchDate": "2026-07-02",
-  "status": "beta",
-  "statusNote": "Live on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
+  "status": "live",
+  "statusNote": "Available on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
   "chains": ["safrochain-testnet"],
   "category": "gaming",
   "tags": [
