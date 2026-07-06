@@ -797,8 +797,8 @@
       "schemaVersion": 2,
       "shortDescription": "Provably-fair on-chain lottery in Telegram — non-custodial MPC wallet, CosmWasm draws, SAF prizes.",
       "slug": "winsaf",
-      "status": "beta",
-      "statusNote": "Live on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
+      "status": "live",
+      "statusNote": "Available on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
       "submittedAt": "2026-07-06",
       "tags": [
         "lottery",
