@@ -85,6 +85,52 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "social",
+      "chains": [
+        "safrochain-mainnet",
+        "safrochain-testnet"
+      ],
+      "description": "Dyma is the task-to-earn platform for Cosmos and the interchain. Contributors complete on-chain and off-chain quests, build portable reputation (DR credentials on Safrochain), and claim rewards straight to their wallet with no custody and no screenshots.\n\nProjects launch campaigns via Dyma Studio with escrowed reward pools, hybrid verification (on-chain indexer, platform APIs, custom REST, manual review), and sybil-resistant reputation floors. Dyma Points (DP) drive seasons and leaderboards; Dima Reputation (DR) compounds into on-chain credentials projects can trust for grants, allowlists, and governance.",
+      "isOpenSource": true,
+      "languages": [
+        "en"
+      ],
+      "license": "MIT",
+      "links": {
+        "docs": "https://docs.dyma.io",
+        "github": "https://github.com/Dyma-IO",
+        "website": "https://dyma.io",
+        "x": "https://x.com/dyma_io"
+      },
+      "logoPath": "apps/dyma/img/logo.png",
+      "manifestPath": "apps/dyma/json/app.json",
+      "name": "Dyma",
+      "schemaVersion": 2,
+      "shortDescription": "Task-to-earn for Cosmos and the interchain - verifiable quests, portable reputation, and self-custody rewards.",
+      "slug": "dyma",
+      "status": "development",
+      "statusNote": "Coming soon - not live yet.",
+      "submittedAt": "2026-07-06",
+      "tags": [
+        "soon",
+        "quests",
+        "rewards",
+        "reputation",
+        "cosmos",
+        "ibc",
+        "task-to-earn",
+        "credentials"
+      ],
+      "team": {
+        "email": "dymaweb3@gmail.com",
+        "name": "Dyma IO",
+        "twitter": "https://x.com/dyma_io"
+      },
+      "updatedAt": "2026-07-06",
+      "url": "https://dyma.io"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "wallet",
       "chains": [
         "safrochain-testnet",

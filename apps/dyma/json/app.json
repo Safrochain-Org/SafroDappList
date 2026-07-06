@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "dyma",
+  "name": "Dyma",
+  "shortDescription": "Task-to-earn for Cosmos and the interchain - verifiable quests, portable reputation, and self-custody rewards.",
+  "description": "Dyma is the task-to-earn platform for Cosmos and the interchain. Contributors complete on-chain and off-chain quests, build portable reputation (DR credentials on Safrochain), and claim rewards straight to their wallet with no custody and no screenshots.\n\nProjects launch campaigns via Dyma Studio with escrowed reward pools, hybrid verification (on-chain indexer, platform APIs, custom REST, manual review), and sybil-resistant reputation floors. Dyma Points (DP) drive seasons and leaderboards; Dima Reputation (DR) compounds into on-chain credentials projects can trust for grants, allowlists, and governance.",
+  "url": "https://dyma.io",
+  "status": "development",
+  "statusNote": "Coming soon - not live yet.",
+  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "category": "social",
+  "tags": [
+    "soon",
+    "quests",
+    "rewards",
+    "reputation",
+    "cosmos",
+    "ibc",
+    "task-to-earn",
+    "credentials"
+  ],
+  "links": {
+    "website": "https://dyma.io",
+    "docs": "https://docs.dyma.io",
+    "github": "https://github.com/Dyma-IO",
+    "x": "https://x.com/dyma_io"
+  },
+  "team": {
+    "name": "Dyma IO",
+    "email": "dymaweb3@gmail.com",
+    "twitter": "https://x.com/dyma_io"
+  },
+  "isOpenSource": true,
+  "license": "MIT",
+  "languages": ["en"],
+  "submittedAt": "2026-07-06",
+  "updatedAt": "2026-07-06"
+}
