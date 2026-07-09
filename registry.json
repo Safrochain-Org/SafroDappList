@@ -556,32 +556,39 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
-      "description": "Safhandle (SafHandle SDK) is the official TypeScript client for short names and phone links on Safrochain. Wallets and dApps can resolve handles like `john` or `+243899123456` to `addr_safro` addresses instead of pasting 50+ character bech32 strings.\n\nBuilt on CosmWasm registry contracts with shared validation rules for integrators. Specification and documentation phase — npm package publish follows in a later milestone.",
+      "description": "SafHandle is a web dApp that turns long Safrochain addresses (addr_safro…) into short, human-readable .saf names.\n\nWith a connected Cosmos wallet (Keplr, Leap or Cosmostation) you can:\n- Register a short .saf name (3–32 characters, a–z 0–9 and hyphens) — the wallet that registers becomes the owner, one name per wallet.\n- Transfer a name to another wallet, or release it back to the pool.\n- Resolve any name to its addr_safro… address, or reverse-lookup the name an address owns — free, read-only, no account and no fee.\n\nAn interactive demo lets you try resolution instantly, and a reserve dashboard manages your handle. Registration attaches the exact on-chain fee read from the contract config. Runs on Safrochain testnet today, with a mainnet toggle ready.\n\nBuilt on the SafHandle CosmWasm registry contract and the open-source SafHandle SDK (TypeScript and Dart/Flutter). Phone-number handles — link a number to your wallet with a verifier-set verified flag — arrive in Phase 2.",
       "isOpenSource": true,
+      "languages": [
+        "en"
+      ],
       "license": "MIT",
       "links": {
-        "docs": "https://github.com/Safrochain-Org/safhandle-sdk/blob/main/docs/README.md",
-        "github": "https://github.com/Safrochain-Org/safhandle-sdk"
+        "docs": "https://www.npmjs.com/package/@safrochaindev/safhandle",
+        "github": "https://github.com/Safrochain-Org/safhandle-sdk",
+        "website": "https://handle.safrochain.com"
       },
       "logoPath": "apps/safhandle/img/logo.png",
       "manifestPath": "apps/safhandle/json/app.json",
-      "name": "Safhandle",
+      "name": "SafHandle",
       "schemaVersion": 2,
-      "shortDescription": "Short names and phone numbers resolve to Safrochain wallet addresses — the human-readable identity layer.",
+      "shortDescription": "Reserve a short .saf name for your Safrochain wallet — register, transfer, release and resolve handles on-chain. Phone handles land in Phase 2.",
       "slug": "safhandle",
-      "status": "concept",
-      "statusNote": "Specification / documentation phase — SDK implementation coming soon.",
+      "status": "beta",
+      "statusNote": "Live on Safrochain testnet (safro-testnet-1); mainnet contract pending. Name registration & resolution work today; phone handles are Phase 2.",
       "submittedAt": "2026-06-27",
       "tags": [
-        "soon",
         "identity",
         "handles",
-        "sdk",
+        "names",
+        "resolver",
+        "wallet",
         "cosmwasm",
-        "phone"
+        "phone",
+        "safrochain"
       ],
-      "updatedAt": "2026-06-27",
-      "url": "https://github.com/Safrochain-Org/safhandle-sdk"
+      "updatedAt": "2026-07-09",
+      "url": "https://handle.safrochain.com",
+      "version": "0.1.0"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -873,6 +880,6 @@
     "eightsaf",
     "smultisig"
   ],
-  "generatedAt": "2026-07-06",
+  "generatedAt": "2026-07-09",
   "registryVersion": 1
 }
