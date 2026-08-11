@@ -40,39 +40,59 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "defi",
+      "category": "social",
       "chains": [
-        "safrochain-testnet",
-        "safrochain-mainnet"
+        "safrochain-mainnet",
+        "safrochain-testnet"
       ],
       "deployments": {
         "mainnet": {
-          "live": false
+          "live": false,
+          "url": "https://dyma.io"
         },
         "testnet": {
           "live": true,
           "url": "https://testnet.landing.dyma.io"
         }
       },
-      "description": "Dyma is available on Safrochain testnet. Open the testnet landing to explore the product while mainnet availability is prepared.",
+      "description": "Dyma is the task-to-earn platform for Cosmos and the interchain. Contributors complete on-chain and off-chain quests, build portable reputation (DR credentials on Safrochain), and claim rewards straight to their wallet with no custody and no screenshots.\n\nProjects launch campaigns via Dyma Studio with escrowed reward pools, hybrid verification (on-chain indexer, platform APIs, custom REST, manual review), and sybil-resistant reputation floors. Dyma Points (DP) drive seasons and leaderboards; Dima Reputation (DR) compounds into on-chain credentials projects can trust for grants, allowlists, and governance.",
+      "isOpenSource": true,
+      "languages": [
+        "en"
+      ],
+      "license": "MIT",
       "links": {
-        "website": "https://testnet.landing.dyma.io"
+        "docs": "https://docs.dyma.io",
+        "github": "https://github.com/Dyma-IO",
+        "website": "https://dyma.io",
+        "x": "https://x.com/dyma_io"
       },
       "logoPath": "apps/dyma/img/logo.png",
       "manifestPath": "apps/dyma/json/app.json",
       "name": "Dyma",
       "schemaVersion": 2,
-      "shortDescription": "Dyma on Safrochain — live on testnet with a dedicated landing experience.",
+      "shortDescription": "Task-to-earn for Cosmos and the interchain. Verifiable quests, portable reputation, and self-custody rewards.",
       "slug": "dyma",
       "status": "live",
-      "statusNote": "Live on Safrochain testnet.",
-      "submittedAt": "2026-08-11",
+      "statusNote": "Live on Safrochain testnet at testnet.landing.dyma.io.",
+      "submittedAt": "2026-07-06",
       "tags": [
-        "testnet",
-        "defi"
+        "quests",
+        "rewards",
+        "reputation",
+        "cosmos",
+        "ibc",
+        "task-to-earn",
+        "credentials",
+        "testnet"
       ],
+      "team": {
+        "email": "dymaweb3@gmail.com",
+        "name": "Dyma IO",
+        "twitter": "https://x.com/dyma_io"
+      },
       "updatedAt": "2026-08-11",
-      "url": "https://testnet.landing.dyma.io"
+      "url": "https://dyma.io"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -847,9 +867,20 @@
       "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "gaming",
       "chains": [
+        "safrochain-mainnet",
         "safrochain-testnet"
       ],
-      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap with no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; the live testnet deployment settles ticket sales and prize claims in SAF.",
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://winsaf.xyz/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://winsaf.xyz/"
+        }
+      },
+      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap with no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; ticket sales and prize claims settle in SAF.",
       "isOpenSource": true,
       "languages": [
         "en",
@@ -871,7 +902,7 @@
       "shortDescription": "Provably-fair on-chain lottery in Telegram with a non-custodial MPC wallet, CosmWasm draws, and SAF prizes.",
       "slug": "winsaf",
       "status": "live",
-      "statusNote": "Available on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
+      "statusNote": "Live on Safrochain mainnet and testnet via Telegram Mini App.",
       "submittedAt": "2026-07-06",
       "tags": [
         "lottery",
@@ -881,13 +912,14 @@
         "mpc",
         "provably-fair",
         "non-custodial",
-        "saf"
+        "saf",
+        "featured"
       ],
       "team": {
         "email": "hello@winsaf.xyz",
         "name": "Dev-Community-IO"
       },
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-08-11",
       "url": "https://winsaf.xyz/",
       "version": "1.0.0"
     }
