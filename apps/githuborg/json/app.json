@@ -7,13 +7,25 @@
   "description": "The Safrochain GitHub organization hosts the public repositories for the chain, tooling, and ecosystem projects. It is the entry point for pull requests, releases, and infrastructure-level code transparency.",
   "url": "https://github.com/Safrochain-Org",
   "status": "live",
-  "chains": ["safrochain-mainnet"],
+  "chains": [
+    "safrochain-mainnet"
+  ],
   "category": "tooling",
-  "tags": ["opensource", "code", "repos"],
+  "tags": [
+    "opensource",
+    "code",
+    "repos"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "isOpenSource": true,
   "links": {
     "github": "https://github.com/Safrochain-Org"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://github.com/Safrochain-Org"
+    }
   }
 }

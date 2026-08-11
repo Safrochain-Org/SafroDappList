@@ -7,14 +7,31 @@
   "description": "Safrochain Hub Mobile App is the official mobile wallet for the Safrochain ecosystem. Send and receive SAF, swap SAF/USDC, bridge assets across Safrochain, Osmosis, and Noble, stake with validators, and explore ecosystem dApps — all from your phone with WalletConnect signing.",
   "url": "https://hub.safrochain.com/",
   "status": "live",
-  "chains": ["safrochain-testnet"],
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "infrastructure",
-  "tags": ["hub", "ecosystem", "saf"],
+  "tags": [
+    "hub",
+    "ecosystem",
+    "saf"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-06-27",
+  "updatedAt": "2026-08-11",
   "launchDate": "2025-01-01",
   "links": {
     "x": "https://twitter.com/safrochain",
     "docs": "https://docs.safrochain.com"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://hub.safrochain.com/"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://hub.safrochain.com/"
+    }
   }
 }

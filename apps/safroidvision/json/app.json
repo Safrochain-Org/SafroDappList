@@ -7,14 +7,26 @@
   "description": "The SafroID vision covers username, avatar, bio, and verifiable social links, with planned integration into Safrochain applications. It addresses the need for portable identity mentioned on the website and in the hub docs, distinct from a bare wallet address.",
   "url": "https://docs.safrochain.com",
   "status": "concept",
-  "chains": ["safrochain-mainnet"],
+  "chains": [
+    "safrochain-mainnet"
+  ],
   "category": "social",
-  "tags": ["did", "profile", "vision"],
+  "tags": [
+    "did",
+    "profile",
+    "vision"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "statusNote": "Vision stage — roadmap item, not live yet.",
   "links": {
     "docs": "https://docs.safrochain.com",
     "x": "https://twitter.com/safrochain"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": false,
+      "url": "https://docs.safrochain.com"
+    }
   }
 }
