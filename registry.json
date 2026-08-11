@@ -2,66 +2,21 @@
   "apps": [
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "other",
-      "chains": [
-        "safrochain-mainnet"
-      ],
-      "description": "The brand kit provides partners and media with consistent visual assets for Safrochain and the SAF token. Accessible through the Resources section of the official website.",
-      "links": {
-        "docs": "https://www.safrochain.com/",
-        "x": "https://twitter.com/safrochain"
-      },
-      "logoPath": "apps/brandassets/img/logo.png",
-      "manifestPath": "apps/brandassets/json/app.json",
-      "name": "Brand Assets",
-      "schemaVersion": 2,
-      "shortDescription": "Official logos, colors, and brand guidelines — available in the Resources section of safrochain.com.",
-      "slug": "brandassets",
-      "status": "live",
-      "submittedAt": "2026-04-06",
-      "tags": [
-        "brand",
-        "logos",
-        "guidelines"
-      ],
-      "updatedAt": "2026-04-15",
-      "url": "https://www.safrochain.com/"
-    },
-    {
-      "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "wallet",
-      "chains": [
-        "safrochain-mainnet",
-        "safrochain-testnet"
-      ],
-      "description": "Cosmostation is a long-standing Cosmos wallet and explorer provider. Safrochain plans to integrate Cosmostation to broaden custody and staking options once network integrations are finalized.",
-      "links": {
-        "github": "https://github.com/cosmostation"
-      },
-      "logoPath": "apps/cosmostation/img/logo.png",
-      "manifestPath": "apps/cosmostation/json/app.json",
-      "name": "Cosmostation",
-      "schemaVersion": 2,
-      "shortDescription": "Cosmos wallet and explorer suite — listed as upcoming support on safrochain.com.",
-      "slug": "cosmostation",
-      "status": "beta",
-      "statusNote": "Listed as upcoming on official sources; not live yet.",
-      "submittedAt": "2026-04-06",
-      "tags": [
-        "wallet",
-        "cosmos",
-        "soon"
-      ],
-      "updatedAt": "2026-04-15",
-      "url": "https://cosmostation.io/"
-    },
-    {
-      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "education",
       "chains": [
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://docs.safrochain.com"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://docs.safrochain.com"
+        }
+      },
       "description": "The official documentation covers tooling setup, RPC/REST endpoints, relevant Cosmos SDK modules, and best practices for building on Safrochain. It complements the marketing site and faucet for testnet onboarding.",
       "links": {
         "docs": "https://docs.safrochain.com",
@@ -80,7 +35,7 @@
         "api",
         "guides"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://docs.safrochain.com"
     },
     {
@@ -90,6 +45,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://dyma.io"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://testnet.landing.dyma.io"
+        }
+      },
       "description": "Dyma is the task-to-earn platform for Cosmos and the interchain. Contributors complete on-chain and off-chain quests, build portable reputation (DR credentials on Safrochain), and claim rewards straight to their wallet with no custody and no screenshots.\n\nProjects launch campaigns via Dyma Studio with escrowed reward pools, hybrid verification (on-chain indexer, platform APIs, custom REST, manual review), and sybil-resistant reputation floors. Dyma Points (DP) drive seasons and leaderboards; Dima Reputation (DR) compounds into on-chain credentials projects can trust for grants, allowlists, and governance.",
       "isOpenSource": true,
       "languages": [
@@ -106,27 +71,27 @@
       "manifestPath": "apps/dyma/json/app.json",
       "name": "Dyma",
       "schemaVersion": 2,
-      "shortDescription": "Task-to-earn for Cosmos and the interchain - verifiable quests, portable reputation, and self-custody rewards.",
+      "shortDescription": "Task-to-earn for Cosmos and the interchain. Verifiable quests, portable reputation, and self-custody rewards.",
       "slug": "dyma",
-      "status": "development",
-      "statusNote": "Coming soon - not live yet.",
+      "status": "live",
+      "statusNote": "Live on Safrochain testnet at testnet.landing.dyma.io.",
       "submittedAt": "2026-07-06",
       "tags": [
-        "soon",
         "quests",
         "rewards",
         "reputation",
         "cosmos",
         "ibc",
         "task-to-earn",
-        "credentials"
+        "credentials",
+        "testnet"
       ],
       "team": {
         "email": "dymaweb3@gmail.com",
         "name": "Dyma IO",
         "twitter": "https://x.com/dyma_io"
       },
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-08-11",
       "url": "https://dyma.io"
     },
     {
@@ -136,6 +101,16 @@
         "safrochain-testnet",
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://eightsaf.io/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://eightsaf.io/"
+        }
+      },
       "description": "EightSaf Wallet is a non-custodial browser extension for Safrochain (Cosmos SDK). Private keys and your 24-word recovery phrase are generated and stored only on your device, encrypted with a spending password. The extension does not operate servers, user accounts, or analytics.\n\nUsers can create or restore a wallet, send and receive SAF on Safrochain Testnet, review transaction history, and connect to websites through the EightSaf provider (window.eightsaf) with explicit approval for each connection and signature. A Keplr-compatible API helps Cosmos dApps work without modification.\n\nInstall from the Chrome Web Store via eightsaf.io. A Firefox build is packaged separately for AMO submission. Mainnet support is prepared in the wallet and will align with Safrochain mainnet launch.",
       "languages": [
         "en"
@@ -162,7 +137,7 @@
         "cosmos",
         "native"
       ],
-      "updatedAt": "2026-06-11",
+      "updatedAt": "2026-08-11",
       "url": "https://eightsaf.io/",
       "version": "1.6.1"
     },
@@ -173,6 +148,16 @@
         "safrochain-testnet",
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://dapp.ekival.com/"
+        },
+        "testnet": {
+          "live": false,
+          "url": "https://dapp.ekival.com/"
+        }
+      },
       "description": "Ekival is a peer-to-peer trading platform with on-chain escrow. Makers and takers match buy/sell orders; fiat is sent off-chain (mobile money, bank transfer, etc.) while crypto is locked in escrow until both sides confirm remittance and receipt.\n\nThe Safrochain deployment uses a CosmWasm port of Ekival's proven Cardano escrow state machine (CreateOrder → TakerCommit → ConfirmRemit → ConfirmReceipt). It powers fiat on-ramp and off-ramp flows for ecosystem apps such as Safrimba savings circles, with dispute resolution and configurable fees.",
       "isOpenSource": true,
       "languages": [
@@ -200,7 +185,7 @@
         "fiat-ramp",
         "featured"
       ],
-      "updatedAt": "2026-06-27",
+      "updatedAt": "2026-08-11",
       "url": "https://dapp.ekival.com/",
       "version": "0.1.0"
     },
@@ -210,6 +195,12 @@
       "chains": [
         "safrochain-testnet"
       ],
+      "deployments": {
+        "testnet": {
+          "live": true,
+          "url": "https://testnet.safrochain.network/"
+        }
+      },
       "description": "The testnet explorer lets you track on-chain activity in real time — accounts, delegations, SAF transfers, and Cosmos SDK messages. It is the go-to tool for debugging integrations before mainnet (testnet.safrochain.network).",
       "links": {
         "docs": "https://docs.safrochain.com"
@@ -227,7 +218,7 @@
         "blocks",
         "validators"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://testnet.safrochain.network/"
     },
     {
@@ -236,6 +227,12 @@
       "chains": [
         "safrochain-testnet"
       ],
+      "deployments": {
+        "testnet": {
+          "live": true,
+          "url": "https://faucet.safrochain.com/"
+        }
+      },
       "description": "The faucet distributes test tokens so builders and testers can deploy contracts and validate flows without real value at stake. Safrochain.com lists it as a live testnet resource; the exact URL is available in the Developers section or the documentation.",
       "links": {
         "docs": "https://docs.safrochain.com"
@@ -254,35 +251,8 @@
         "fees",
         "developers"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://faucet.safrochain.com/"
-    },
-    {
-      "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "gaming",
-      "chains": [
-        "safrochain-testnet"
-      ],
-      "description": "The Hub and its mission-style quests reflect the goal of engaging users around the SAF token without promising a standalone AAA game. This entry covers the learn-to-earn logic and community challenges rather than a single game title.",
-      "links": {
-        "docs": "https://docs.safrochain.com",
-        "x": "https://twitter.com/safrochain"
-      },
-      "logoPath": "apps/gamingplaceholder/img/logo.png",
-      "manifestPath": "apps/gamingplaceholder/json/app.json",
-      "name": "Gaming & Missions (Hub)",
-      "schemaVersion": 2,
-      "shortDescription": "Gamified quests and missions in the Hub — aligned with mission and reward activities.",
-      "slug": "gamingplaceholder",
-      "status": "live",
-      "submittedAt": "2026-04-06",
-      "tags": [
-        "hub",
-        "missions",
-        "rewards"
-      ],
-      "updatedAt": "2026-04-15",
-      "url": "https://hub.safrochain.com/"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -290,6 +260,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://github.com/Safrochain-Org"
+        }
+      },
       "description": "The Safrochain GitHub organization hosts the public repositories for the chain, tooling, and ecosystem projects. It is the entry point for pull requests, releases, and infrastructure-level code transparency.",
       "isOpenSource": true,
       "links": {
@@ -308,7 +284,7 @@
         "code",
         "repos"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://github.com/Safrochain-Org"
     },
     {
@@ -317,6 +293,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://www.safrochain.com/"
+        }
+      },
       "description": "The grant program aims to support teams building dApps, infrastructure, and tooling around SAF and Safrochain. It complements the technical roadmap (mainnet, foundation, partnerships).",
       "links": {
         "x": "https://twitter.com/safrochain"
@@ -335,7 +317,7 @@
         "builders",
         "ecosystem"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://www.safrochain.com/"
     },
     {
@@ -345,6 +327,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://bridge.safrochain.com/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://bridge.safrochain.com/"
+        }
+      },
       "description": "The Safrochain IBC Bridge lets you send and receive tokens between Safrochain and the wider Cosmos ecosystem via the Inter-Blockchain Communication protocol. A dedicated interface for initiating cross-chain transactions seamlessly.",
       "links": {
         "docs": "https://docs.safrochain.com",
@@ -364,7 +356,7 @@
         "tokens",
         "crosschain"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://bridge.safrochain.com/"
     },
     {
@@ -374,6 +366,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://www.keplr.app/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://www.keplr.app/"
+        }
+      },
       "description": "Keplr is a popular browser extension and mobile app for Cosmos chains. Safrochain lists Keplr as a compatible wallet (testnet live, mainnet coming), making it a gateway for holding and using SAF within the interchain ecosystem.",
       "links": {
         "docs": "https://docs.keplr.app",
@@ -392,36 +394,8 @@
         "cosmos",
         "extension"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://www.keplr.app/"
-    },
-    {
-      "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "wallet",
-      "chains": [
-        "safrochain-mainnet",
-        "safrochain-testnet"
-      ],
-      "description": "Leap offers a mobile and browser experience for the Cosmos ecosystem. The Supported Wallets page on safrochain.com lists Leap as an upcoming option, continuing the IBC interoperability and SAF usage story.",
-      "links": {
-        "x": "https://twitter.com/leap_wallet"
-      },
-      "logoPath": "apps/leap/img/logo.png",
-      "manifestPath": "apps/leap/json/app.json",
-      "name": "Leap Wallet",
-      "schemaVersion": 2,
-      "shortDescription": "Cosmos wallet — listed on safrochain.com as upcoming support.",
-      "slug": "leap",
-      "status": "beta",
-      "statusNote": "Listed as upcoming on official sources; not live yet.",
-      "submittedAt": "2026-04-06",
-      "tags": [
-        "wallet",
-        "mobile",
-        "soon"
-      ],
-      "updatedAt": "2026-04-15",
-      "url": "https://www.leapwallet.io/"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -430,6 +404,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://www.mintscan.io/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://www.mintscan.io/"
+        }
+      },
       "description": "Mintscan provides an aggregated view of Cosmos chains, useful for tracking accounts, governance proposals, and IBC activity. Safrochain references it as an explorer to watch alongside other community-run explorers.",
       "links": {
         "x": "https://twitter.com/mintscanio"
@@ -447,7 +431,7 @@
         "ibc",
         "analytics"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://www.mintscan.io/"
     },
     {
@@ -457,6 +441,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+        },
+        "testnet": {
+          "live": false,
+          "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+        }
+      },
       "description": "MoMoTrack Oracle brings Mobile Money (MoMo) transaction verification on-chain for Africa. It is a verification and provenance layer on top of licensed aggregators (PowerPay, Cotanipay, and others) — not a financial intermediary.\n\nDevelopers integrate the MoMoTrack SDK client-side; successful payments are attested with privacy-preserving proofs, validated by the oracle, and recorded immutably on Safrochain. P2P apps, remittance platforms, tontines, and DeFi protocols get cryptographic payment proof instead of manual reconciliation or screenshot disputes.",
       "isOpenSource": true,
       "license": "MIT",
@@ -481,7 +475,7 @@
         "africa",
         "sdk"
       ],
-      "updatedAt": "2026-06-27",
+      "updatedAt": "2026-08-11",
       "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
     },
     {
@@ -491,6 +485,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://osmosis.zone/"
+        },
+        "testnet": {
+          "live": false,
+          "url": "https://osmosis.zone/"
+        }
+      },
       "description": "Osmosis is a leading AMM in the Cosmos ecosystem. The Safrochain roadmap includes an Osmosis integration (liquidity pools, IBC) to connect SAF liquidity to the broader interchain.",
       "links": {
         "docs": "https://docs.osmosis.zone",
@@ -511,7 +515,7 @@
         "liquidity",
         "dex"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://osmosis.zone/"
     },
     {
@@ -521,6 +525,16 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://hub.safrochain.com/"
+        },
+        "testnet": {
+          "live": false,
+          "url": "https://hub.safrochain.com/"
+        }
+      },
       "description": "Pesaex (PesaX) is payment infrastructure built on Safrochain — the real-world money on/off ramp for the ecosystem.\n\nIt bridges crypto and Mobile Money across Africa, allowing users to convert Mobile Money to USDC (on-ramp), USDC to Mobile Money (off-ramp), and send value across borders (e.g. Kenya ↔ Nigeria) more cheaply and quickly than traditional rails.\n\nBuilt on Safrochain with USDC from Noble via IBC. Initial focus: Kenya and Nigeria. Goal: make fiat-to-crypto and crypto-to-fiat transfers cheaper, faster, and more accessible.",
       "links": {
         "docs": "https://docs.safrochain.com",
@@ -546,7 +560,7 @@
         "kenya",
         "nigeria"
       ],
-      "updatedAt": "2026-06-27",
+      "updatedAt": "2026-08-11",
       "url": "https://hub.safrochain.com/"
     },
     {
@@ -556,32 +570,43 @@
         "safrochain-mainnet",
         "safrochain-testnet"
       ],
-      "description": "Safhandle (SafHandle SDK) is the official TypeScript client for short names and phone links on Safrochain. Wallets and dApps can resolve handles like `john` or `+243899123456` to `addr_safro` addresses instead of pasting 50+ character bech32 strings.\n\nBuilt on CosmWasm registry contracts with shared validation rules for integrators. Specification and documentation phase — npm package publish follows in a later milestone.",
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://handle.safrochain.com"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://handle.safrochain.com"
+        }
+      },
+      "description": "Safhandle is the human-readable identity layer for Safrochain. Resolve short names and phone links like `john` or `+243899123456` to `addr_safro` addresses instead of pasting long bech32 strings.\n\nBuilt on CosmWasm registry contracts with shared validation for wallets and dApps. Live on mainnet and testnet at handle.safrochain.com.",
       "isOpenSource": true,
       "license": "MIT",
       "links": {
         "docs": "https://github.com/Safrochain-Org/safhandle-sdk/blob/main/docs/README.md",
-        "github": "https://github.com/Safrochain-Org/safhandle-sdk"
+        "github": "https://github.com/Safrochain-Org/safhandle-sdk",
+        "website": "https://handle.safrochain.com"
       },
       "logoPath": "apps/safhandle/img/logo.png",
       "manifestPath": "apps/safhandle/json/app.json",
       "name": "Safhandle",
       "schemaVersion": 2,
-      "shortDescription": "Short names and phone numbers resolve to Safrochain wallet addresses — the human-readable identity layer.",
+      "shortDescription": "Short names and phone numbers resolve to Safrochain wallet addresses. The human-readable identity layer.",
       "slug": "safhandle",
-      "status": "concept",
-      "statusNote": "Specification / documentation phase — SDK implementation coming soon.",
+      "status": "live",
+      "statusNote": "Live on Safrochain mainnet and testnet.",
       "submittedAt": "2026-06-27",
       "tags": [
-        "soon",
         "identity",
         "handles",
         "sdk",
         "cosmwasm",
-        "phone"
+        "phone",
+        "featured"
       ],
-      "updatedAt": "2026-06-27",
-      "url": "https://github.com/Safrochain-Org/safhandle-sdk"
+      "updatedAt": "2026-08-11",
+      "url": "https://handle.safrochain.com"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -589,6 +614,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://hub.safrochain.com/"
+        }
+      },
       "description": "Safrimba demonstrates CosmWasm usage on Safrochain: rotating savings groups with automated contribution and distribution rules. The official website highlights it in the FAQ and roadmap (beta) as a flagship product for financial inclusion.",
       "links": {
         "docs": "https://safrimba.safrochain.com/docs",
@@ -609,7 +640,7 @@
         "tontine",
         "featured"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://hub.safrochain.com/",
       "version": "0.1.0-beta.1"
     },
@@ -617,37 +648,19 @@
       "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "infrastructure",
       "chains": [
-        "safrochain-mainnet"
-      ],
-      "description": "Safrochain.com showcases the Cosmos SDK layer, IBC interoperability, sub-cent fees, and core use cases such as remittances, micropayments, and savings. The site provides the roadmap (mainnet targeted Q3 2026), resources (whitepaper, brand assets), and developer access (documentation, explorer, faucet).",
-      "launchDate": "2024-01-01",
-      "links": {
-        "docs": "https://docs.safrochain.com",
-        "x": "https://twitter.com/safrochain"
-      },
-      "logoPath": "apps/safrochaincom/img/logo.png",
-      "manifestPath": "apps/safrochaincom/json/app.json",
-      "name": "Safrochain.com",
-      "schemaVersion": 2,
-      "shortDescription": "Official website: Africa-first vision, tokenomics, roadmap, FAQ, network status, and ecosystem links.",
-      "slug": "safrochaincom",
-      "status": "live",
-      "submittedAt": "2026-04-06",
-      "tags": [
-        "official",
-        "roadmap",
-        "token-saf",
-        "featured"
-      ],
-      "updatedAt": "2026-04-15",
-      "url": "https://www.safrochain.com/"
-    },
-    {
-      "$schema": "../../../schemas/app.manifest.schema.json",
-      "category": "infrastructure",
-      "chains": [
+        "safrochain-mainnet",
         "safrochain-testnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://hub.safrochain.com/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://hub.safrochain.com/"
+        }
+      },
       "description": "Safrochain Hub Mobile App is the official mobile wallet for the Safrochain ecosystem. Send and receive SAF, swap SAF/USDC, bridge assets across Safrochain, Osmosis, and Noble, stake with validators, and explore ecosystem dApps — all from your phone with WalletConnect signing.",
       "launchDate": "2025-01-01",
       "links": {
@@ -667,7 +680,7 @@
         "ecosystem",
         "saf"
       ],
-      "updatedAt": "2026-06-27",
+      "updatedAt": "2026-08-11",
       "url": "https://hub.safrochain.com/"
     },
     {
@@ -676,6 +689,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://docs.safrochain.com"
+        }
+      },
       "description": "The SafroID vision covers username, avatar, bio, and verifiable social links, with planned integration into Safrochain applications. It addresses the need for portable identity mentioned on the website and in the hub docs, distinct from a bare wallet address.",
       "links": {
         "docs": "https://docs.safrochain.com",
@@ -695,7 +714,7 @@
         "profile",
         "vision"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://docs.safrochain.com"
     },
     {
@@ -704,6 +723,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": false,
+          "url": "https://www.safrochain.com/"
+        }
+      },
       "description": "SGOV is the dedicated governance platform for Safrochain, enabling SAF token holders to submit proposals, vote on-chain, and participate in the direction of the network and ecosystem. Designed to bring transparent, community-driven decision-making to every aspect of the protocol.",
       "links": {
         "docs": "https://docs.safrochain.com",
@@ -724,7 +749,7 @@
         "proposals",
         "community"
       ],
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-08-11",
       "url": "https://www.safrochain.com/"
     },
     {
@@ -734,6 +759,16 @@
         "safrochain-testnet",
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://smultisig.safrochain.com"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://smultisig-testnet.safrochain.com"
+        }
+      },
       "description": "SMultisig is a non-custodial threshold multisignature wallet for teams, DAOs, and treasuries on Safrochain. Configure any K-of-N quorum with Cosmos SDK LegacyAmino multisig, compatible with Keplr, Leap, and Cosmostation.\n\nDraft transactions off-chain with titles, memos, and fees; each signer approves the same SignDoc in their wallet. Simulate before broadcast, collect partial signatures, and submit when the threshold is met. The app coordinates drafts, roles, and metadata in a private collaboration layer — wallets hold the only private keys.\n\nSupports native SAF, IBC tokens, and Token Factory denoms with auto-resolved symbols and icons. Sign in with ADR-036 wallet auth, role-based access for managers/signers/viewers, SignDoc verification, and encrypted multisig backups for recovery.",
       "languages": [
         "en"
@@ -760,7 +795,7 @@
         "cosmos",
         "featured"
       ],
-      "updatedAt": "2026-06-29",
+      "updatedAt": "2026-08-11",
       "url": "https://smultisig-testnet.safrochain.com",
       "version": "0.1.1-beta"
     },
@@ -770,6 +805,12 @@
       "chains": [
         "safrochain-mainnet"
       ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://safrochain.valopers.com/"
+        }
+      },
       "description": "Valopers Mainnet Explorer, powered by Bitszn, tracks Safrochain mainnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
       "links": {
         "docs": "https://docs.safrochain.com"
@@ -787,7 +828,7 @@
         "blocks",
         "validators"
       ],
-      "updatedAt": "2026-06-09",
+      "updatedAt": "2026-08-11",
       "url": "https://safrochain.valopers.com/"
     },
     {
@@ -796,6 +837,12 @@
       "chains": [
         "safrochain-testnet"
       ],
+      "deployments": {
+        "testnet": {
+          "live": true,
+          "url": "https://testnet.safrochain.valopers.com/"
+        }
+      },
       "description": "Valopers Testnet Explorer, powered by Bitszn, tracks Safrochain testnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
       "links": {
         "docs": "https://docs.safrochain.com"
@@ -813,16 +860,27 @@
         "blocks",
         "validators"
       ],
-      "updatedAt": "2026-06-09",
+      "updatedAt": "2026-08-11",
       "url": "https://testnet.safrochain.valopers.com/"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "gaming",
       "chains": [
+        "safrochain-mainnet",
         "safrochain-testnet"
       ],
-      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap with no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; the live testnet deployment settles ticket sales and prize claims in SAF.",
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://winsaf.xyz/"
+        },
+        "testnet": {
+          "live": true,
+          "url": "https://winsaf.xyz/"
+        }
+      },
+      "description": "WinSaf is a non-custodial, provably-fair lottery delivered as a Telegram Mini App on Safrochain. Users open the bot, set a PIN to create a 2-of-3 MPC wallet, fund it with SAF, and buy tickets in one tap with no seed phrase or browser extension required.\n\nDraws run on-chain via an open-source CosmWasm contract with verifiable randomness from the public drand beacon. Prize tiers, jackpot rollovers, and a Must Be Won rule are enforced in contract logic. Players can verify every round on the Safrochain explorer.\n\nThe product includes referral rewards, daily missions, achievements, responsible-play limits, and English/French UI. CosmWasm contracts are Apache-2.0 on GitHub; ticket sales and prize claims settle in SAF.",
       "isOpenSource": true,
       "languages": [
         "en",
@@ -844,7 +902,7 @@
       "shortDescription": "Provably-fair on-chain lottery in Telegram with a non-custodial MPC wallet, CosmWasm draws, and SAF prizes.",
       "slug": "winsaf",
       "status": "live",
-      "statusNote": "Available on Safrochain testnet via Telegram Mini App; mainnet when the network launches.",
+      "statusNote": "Live on Safrochain mainnet and testnet via Telegram Mini App.",
       "submittedAt": "2026-07-06",
       "tags": [
         "lottery",
@@ -854,25 +912,22 @@
         "mpc",
         "provably-fair",
         "non-custodial",
-        "saf"
+        "saf",
+        "featured"
       ],
       "team": {
         "email": "hello@winsaf.xyz",
         "name": "Dev-Community-IO"
       },
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-08-11",
       "url": "https://winsaf.xyz/",
       "version": "1.0.0"
     }
   ],
   "featuredSlugs": [
-    "pesaex",
-    "safrimba",
-    "ekival",
-    "safrohub",
-    "eightsaf",
-    "smultisig"
+    "winsaf",
+    "safhandle"
   ],
-  "generatedAt": "2026-07-06",
+  "generatedAt": "2026-08-11",
   "registryVersion": 1
 }

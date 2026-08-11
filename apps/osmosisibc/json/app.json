@@ -7,14 +7,32 @@
   "description": "Osmosis is a leading AMM in the Cosmos ecosystem. The Safrochain roadmap includes an Osmosis integration (liquidity pools, IBC) to connect SAF liquidity to the broader interchain.",
   "url": "https://osmosis.zone/",
   "status": "beta",
-  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "defi",
-  "tags": ["ibc", "amm", "liquidity", "dex"],
+  "tags": [
+    "ibc",
+    "amm",
+    "liquidity",
+    "dex"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "statusNote": "Listed on the roadmap; not live yet.",
   "links": {
     "x": "https://twitter.com/osmosiszone",
     "docs": "https://docs.osmosis.zone"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": false,
+      "url": "https://osmosis.zone/"
+    },
+    "testnet": {
+      "live": false,
+      "url": "https://osmosis.zone/"
+    }
   }
 }

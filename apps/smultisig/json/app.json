@@ -8,7 +8,10 @@
   "url": "https://smultisig-testnet.safrochain.com",
   "status": "live",
   "statusNote": "Available on Safrochain testnet and mainnet (https://smultisig.safrochain.com).",
-  "chains": ["safrochain-testnet", "safrochain-mainnet"],
+  "chains": [
+    "safrochain-testnet",
+    "safrochain-mainnet"
+  ],
   "category": "wallet",
   "tags": [
     "multisig",
@@ -19,12 +22,24 @@
     "cosmos",
     "featured"
   ],
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "submittedAt": "2026-06-28",
-  "updatedAt": "2026-06-29",
+  "updatedAt": "2026-08-11",
   "version": "0.1.1-beta",
   "links": {
     "website": "https://smultisig-testnet.safrochain.com",
     "x": "https://twitter.com/safrochain"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://smultisig.safrochain.com"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://smultisig-testnet.safrochain.com"
+    }
   }
 }

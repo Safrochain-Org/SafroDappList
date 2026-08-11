@@ -3,22 +3,25 @@
   "schemaVersion": 2,
   "slug": "dyma",
   "name": "Dyma",
-  "shortDescription": "Task-to-earn for Cosmos and the interchain - verifiable quests, portable reputation, and self-custody rewards.",
+  "shortDescription": "Task-to-earn for Cosmos and the interchain. Verifiable quests, portable reputation, and self-custody rewards.",
   "description": "Dyma is the task-to-earn platform for Cosmos and the interchain. Contributors complete on-chain and off-chain quests, build portable reputation (DR credentials on Safrochain), and claim rewards straight to their wallet with no custody and no screenshots.\n\nProjects launch campaigns via Dyma Studio with escrowed reward pools, hybrid verification (on-chain indexer, platform APIs, custom REST, manual review), and sybil-resistant reputation floors. Dyma Points (DP) drive seasons and leaderboards; Dima Reputation (DR) compounds into on-chain credentials projects can trust for grants, allowlists, and governance.",
   "url": "https://dyma.io",
-  "status": "development",
-  "statusNote": "Coming soon - not live yet.",
-  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "status": "live",
+  "statusNote": "Live on Safrochain testnet at testnet.landing.dyma.io.",
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "social",
   "tags": [
-    "soon",
     "quests",
     "rewards",
     "reputation",
     "cosmos",
     "ibc",
     "task-to-earn",
-    "credentials"
+    "credentials",
+    "testnet"
   ],
   "links": {
     "website": "https://dyma.io",
@@ -35,5 +38,15 @@
   "license": "MIT",
   "languages": ["en"],
   "submittedAt": "2026-07-06",
-  "updatedAt": "2026-07-06"
+  "updatedAt": "2026-08-11",
+  "deployments": {
+    "testnet": {
+      "live": true,
+      "url": "https://testnet.landing.dyma.io"
+    },
+    "mainnet": {
+      "live": false,
+      "url": "https://dyma.io"
+    }
+  }
 }

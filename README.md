@@ -18,6 +18,19 @@ https://raw.githubusercontent.com/ORG/REPO/REF/apps/<slug>/img/logo.png
 
 The JSON schema for each manifest is [schemas/app.manifest.schema.json](schemas/app.manifest.schema.json).
 
+### Per-network deployments
+
+Optional `deployments` lets a dApp be live on testnet, mainnet, both, or neither, with a separate entry URL per network:
+
+```json
+"deployments": {
+  "mainnet": { "live": true, "url": "https://example.com" },
+  "testnet": { "live": false }
+}
+```
+
+Consumers (for example Safrochain Hub) should pick the entry for the user’s active network. Keep top-level `url` as a fallback.
+
 ## Repository layout
 
 ```text
