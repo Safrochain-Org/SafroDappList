@@ -1,4 +1,14 @@
 {
-  "slugs": ["winsaf", "safhandle"],
+  "slugs": [
+    "winsaf",
+    "safhandle",
+    "dyma",
+    "eightsaf",
+    "smultisig",
+    "safrimba",
+    "ekival",
+    "pesaex",
+    "momotrack"
+  ],
   "updatedAt": "2026-08-11"
 }
