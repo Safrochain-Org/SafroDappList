@@ -151,11 +151,11 @@
       "deployments": {
         "mainnet": {
           "live": false,
-          "url": "https://dapp.ekival.com/"
+          "url": "https://ekival.com"
         },
         "testnet": {
-          "live": false,
-          "url": "https://dapp.ekival.com/"
+          "live": true,
+          "url": "https://ekival.com"
         }
       },
       "description": "Ekival is a peer-to-peer trading platform with on-chain escrow. Makers and takers match buy/sell orders; fiat is sent off-chain (mobile money, bank transfer, etc.) while crypto is locked in escrow until both sides confirm remittance and receipt.\n\nThe Safrochain deployment uses a CosmWasm port of Ekival's proven Cardano escrow state machine (CreateOrder → TakerCommit → ConfirmRemit → ConfirmReceipt). It powers fiat on-ramp and off-ramp flows for ecosystem apps such as Safrimba savings circles, with dispute resolution and configurable fees.",
@@ -166,7 +166,7 @@
       ],
       "license": "Apache-2.0",
       "links": {
-        "website": "https://dapp.ekival.com/"
+        "website": "https://ekival.com"
       },
       "logoPath": "apps/ekival/img/logo.png",
       "manifestPath": "apps/ekival/json/app.json",
@@ -174,8 +174,8 @@
       "schemaVersion": 2,
       "shortDescription": "P2P escrow for fiat ↔ crypto trades — collateral-backed settlement for mobile money and local payment rails.",
       "slug": "ekival",
-      "status": "beta",
-      "statusNote": "Live P2P product on Cardano; Safrochain CosmWasm escrow on testnet with mainnet at launch.",
+      "status": "live",
+      "statusNote": "Live on Safrochain testnet at ekival.com. Mainnet at launch.",
       "submittedAt": "2026-06-27",
       "tags": [
         "p2p",
@@ -183,10 +183,11 @@
         "cosmwasm",
         "mobile-money",
         "fiat-ramp",
-        "featured"
+        "featured",
+        "testnet"
       ],
-      "updatedAt": "2026-08-11",
-      "url": "https://dapp.ekival.com/",
+      "updatedAt": "2026-08-14",
+      "url": "https://ekival.com",
       "version": "0.1.0"
     },
     {
@@ -935,6 +936,6 @@
     "pesaex",
     "momotrack"
   ],
-  "generatedAt": "2026-08-11",
+  "generatedAt": "2026-08-14",
   "registryVersion": 1
 }
