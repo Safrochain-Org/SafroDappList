@@ -150,15 +150,15 @@
       ],
       "deployments": {
         "mainnet": {
-          "live": false,
-          "url": "https://ekival.com"
+          "live": true,
+          "url": "https://ekival.com/safro/"
         },
         "testnet": {
           "live": true,
-          "url": "https://ekival.com"
+          "url": "https://ekival.com/safro/"
         }
       },
-      "description": "Ekival is a peer-to-peer trading platform with on-chain escrow. Makers and takers match buy/sell orders; fiat is sent off-chain (mobile money, bank transfer, etc.) while crypto is locked in escrow until both sides confirm remittance and receipt.\n\nThe Safrochain deployment uses a CosmWasm port of Ekival's proven Cardano escrow state machine (CreateOrder → TakerCommit → ConfirmRemit → ConfirmReceipt). It powers fiat on-ramp and off-ramp flows for ecosystem apps such as Safrimba savings circles, with dispute resolution and configurable fees.",
+      "description": "Ekival is a peer-to-peer trading platform with on-chain escrow. Makers and takers match buy/sell orders; fiat is sent off-chain (mobile money, bank transfer, etc.) while crypto is locked in escrow until both sides confirm remittance and receipt.\n\nThe Safrochain deployment uses a CosmWasm port of Ekival's proven Cardano escrow state machine (CreateOrder → TakerCommit → ConfirmRemit → ConfirmReceipt). It powers fiat on-ramp and off-ramp flows for ecosystem apps such as Safrimba savings circles, with dispute resolution and configurable fees. The hosted app at ekival.com/safro supports both Safrochain testnet and mainnet via an in-app toggle.",
       "isOpenSource": true,
       "languages": [
         "en",
@@ -166,7 +166,7 @@
       ],
       "license": "Apache-2.0",
       "links": {
-        "website": "https://ekival.com"
+        "website": "https://ekival.com/safro/"
       },
       "logoPath": "apps/ekival/img/logo.png",
       "manifestPath": "apps/ekival/json/app.json",
@@ -175,7 +175,7 @@
       "shortDescription": "P2P escrow for fiat ↔ crypto trades — collateral-backed settlement for mobile money and local payment rails.",
       "slug": "ekival",
       "status": "live",
-      "statusNote": "Live on Safrochain testnet at ekival.com. Mainnet at launch.",
+      "statusNote": "Live on Safrochain mainnet and testnet. Open ekival.com/safro and use the Testnet/Mainnet toggle.",
       "submittedAt": "2026-06-27",
       "tags": [
         "p2p",
@@ -184,11 +184,12 @@
         "mobile-money",
         "fiat-ramp",
         "featured",
-        "testnet"
+        "testnet",
+        "mainnet"
       ],
-      "updatedAt": "2026-08-14",
-      "url": "https://ekival.com",
-      "version": "0.1.0"
+      "updatedAt": "2026-08-18",
+      "url": "https://ekival.com/safro/",
+      "version": "0.2.0"
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
@@ -943,6 +944,6 @@
     "pesaex",
     "momotrack"
   ],
-  "generatedAt": "2026-08-14",
+  "generatedAt": "2026-08-18",
   "registryVersion": 1
 }
