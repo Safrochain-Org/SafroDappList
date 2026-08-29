@@ -4,7 +4,7 @@
   "slug": "safrimba",
   "name": "Safrimba",
   "shortDescription": "On-chain digital tontines via CosmWasm — transparent rotating savings groups.",
-  "description": "Safrimba demonstrates CosmWasm usage on Safrochain: rotating savings groups with automated contribution and distribution rules. The official website highlights it in the FAQ and roadmap as a flagship product for financial inclusion. The hosted app supports Safrochain mainnet (safrimba.safrochain.com) and testnet (safrimba.test.safrochain.com).",
+  "description": "Safrimba demonstrates CosmWasm usage on Safrochain: rotating savings groups with automated contribution and distribution rules. The official website highlights it in the FAQ and roadmap as a flagship product for financial inclusion. The hosted app supports Safrochain mainnet (safrimba.safrochain.com) and testnet (safrimbatest.safrochain.com).",
   "url": "https://safrimba.safrochain.com/discover",
   "status": "live",
   "chains": [
@@ -23,7 +23,7 @@
   "submittedAt": "2026-04-06",
   "updatedAt": "2026-08-18",
   "version": "0.1.0-beta.1",
-  "statusNote": "Live on Safrochain mainnet at safrimba.safrochain.com. Testnet at safrimba.test.safrochain.com.",
+  "statusNote": "Live on Safrochain mainnet at safrimba.safrochain.com. Testnet at safrimbatest.safrochain.com.",
   "links": {
     "website": "https://safrimba.safrochain.com/discover",
     "x": "https://twitter.com/safrochain",
@@ -36,7 +36,7 @@
     },
     "testnet": {
       "live": true,
-      "url": "https://safrimba.test.safrochain.com/discover"
+      "url": "https://safrimbatest.safrochain.com/discover"
     }
   }
 }
