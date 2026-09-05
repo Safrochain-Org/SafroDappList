@@ -7,13 +7,25 @@
   "description": "The grant program aims to support teams building dApps, infrastructure, and tooling around SAF and Safrochain. It complements the technical roadmap (mainnet, foundation, partnerships).",
   "url": "https://www.safrochain.com/",
   "status": "beta",
-  "chains": ["safrochain-mainnet"],
+  "chains": [
+    "safrochain-mainnet"
+  ],
   "category": "dao",
-  "tags": ["grants", "builders", "ecosystem"],
+  "tags": [
+    "grants",
+    "builders",
+    "ecosystem"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "statusNote": "Announced as coming soon; not live yet.",
   "links": {
     "x": "https://twitter.com/safrochain"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": false,
+      "url": "https://www.safrochain.com/"
+    }
   }
 }

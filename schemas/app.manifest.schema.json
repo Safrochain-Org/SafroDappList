@@ -24,6 +24,26 @@
         "other"
       ],
       "description": "Predefined listing theme. New themes are added only by maintainers via PR to this schema (enum + release notes)."
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "networkDeployment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["live"],
+      "properties": {
+        "live": {
+          "type": "boolean",
+          "description": "Whether the dApp is available to open on this Safrochain network."
+        },
+        "url": {
+          "$ref": "#/$defs/httpsUrl",
+          "description": "HTTPS entry URL for this network. Required when live is true (enforced by validate.mjs)."
+        }
+      }
     }
   },
   "required": [
@@ -77,10 +97,18 @@
       "description": "Longer description for the detail view."
     },
     "url": {
-      "type": "string",
-      "format": "uri",
-      "pattern": "^https://",
-      "description": "Primary HTTPS URL for the dApp."
+      "$ref": "#/$defs/httpsUrl",
+      "description": "Primary HTTPS URL for the dApp (fallback when a network-specific deployment URL is missing)."
+    },
+    "deployments": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "description": "Per-network availability and entry URLs. An app can be live on testnet, mainnet, both, or neither.",
+      "properties": {
+        "mainnet": { "$ref": "#/$defs/networkDeployment" },
+        "testnet": { "$ref": "#/$defs/networkDeployment" }
+      }
     },
     "version": {
       "type": "string",

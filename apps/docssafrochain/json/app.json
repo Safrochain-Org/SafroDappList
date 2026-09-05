@@ -7,13 +7,30 @@
   "description": "The official documentation covers tooling setup, RPC/REST endpoints, relevant Cosmos SDK modules, and best practices for building on Safrochain. It complements the marketing site and faucet for testnet onboarding.",
   "url": "https://docs.safrochain.com",
   "status": "live",
-  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "education",
-  "tags": ["developers", "api", "guides"],
+  "tags": [
+    "developers",
+    "api",
+    "guides"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "links": {
     "docs": "https://docs.safrochain.com",
     "github": "https://github.com/Safrochain-Org"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://docs.safrochain.com"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://docs.safrochain.com"
+    }
   }
 }

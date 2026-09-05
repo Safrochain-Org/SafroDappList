@@ -1,4 +1,14 @@
 {
-  "slugs": ["safrimba", "safrohub", "faucettestnet"],
-  "updatedAt": "2026-05-16"
+  "slugs": [
+    "winsaf",
+    "safhandle",
+    "dyma",
+    "eightsaf",
+    "smultisig",
+    "safrimba",
+    "ekival",
+    "pesaex",
+    "momotrack"
+  ],
+  "updatedAt": "2026-08-11"
 }

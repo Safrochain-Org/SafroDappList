@@ -7,12 +7,29 @@
   "description": "Mintscan provides an aggregated view of Cosmos chains, useful for tracking accounts, governance proposals, and IBC activity. Safrochain references it as an explorer to watch alongside other community-run explorers.",
   "url": "https://www.mintscan.io/",
   "status": "live",
-  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "analytics",
-  "tags": ["explorer", "ibc", "analytics"],
+  "tags": [
+    "explorer",
+    "ibc",
+    "analytics"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "links": {
     "x": "https://twitter.com/mintscanio"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://www.mintscan.io/"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://www.mintscan.io/"
+    }
   }
 }

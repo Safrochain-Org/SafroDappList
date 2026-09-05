@@ -7,12 +7,24 @@
   "description": "Valopers Testnet Explorer, powered by Bitszn, tracks Safrochain testnet activity in real time, including accounts, delegations, SAF transfers, validators, and Cosmos SDK messages.",
   "url": "https://testnet.safrochain.valopers.com/",
   "status": "live",
-  "chains": ["safrochain-testnet"],
+  "chains": [
+    "safrochain-testnet"
+  ],
   "category": "analytics",
-  "tags": ["explorer", "blocks", "validators"],
+  "tags": [
+    "explorer",
+    "blocks",
+    "validators"
+  ],
   "submittedAt": "2026-06-09",
-  "updatedAt": "2026-06-09",
+  "updatedAt": "2026-08-11",
   "links": {
     "docs": "https://docs.safrochain.com"
+  },
+  "deployments": {
+    "testnet": {
+      "live": true,
+      "url": "https://testnet.safrochain.valopers.com/"
+    }
   }
 }

@@ -8,13 +8,26 @@
   "url": "https://www.safrochain.com/",
   "status": "concept",
   "statusNote": "To be determined — governance platform under design.",
-  "chains": ["safrochain-mainnet"],
+  "chains": [
+    "safrochain-mainnet"
+  ],
   "category": "governance",
-  "tags": ["governance", "voting", "proposals", "community"],
+  "tags": [
+    "governance",
+    "voting",
+    "proposals",
+    "community"
+  ],
   "submittedAt": "2026-04-15",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "links": {
     "x": "https://twitter.com/safrochain",
     "docs": "https://docs.safrochain.com"
+  },
+  "deployments": {
+    "mainnet": {
+      "live": false,
+      "url": "https://www.safrochain.com/"
+    }
   }
 }

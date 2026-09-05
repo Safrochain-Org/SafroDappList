@@ -9,16 +9,37 @@
   "version": "1.6.1",
   "status": "live",
   "statusNote": "Available on Chrome Web Store. Safrochain Testnet supported; mainnet when the network launches.",
-  "chains": ["safrochain-testnet", "safrochain-mainnet"],
+  "chains": [
+    "safrochain-testnet",
+    "safrochain-mainnet"
+  ],
   "category": "wallet",
-  "tags": ["wallet", "extension", "browser", "cosmos", "native"],
+  "tags": [
+    "wallet",
+    "extension",
+    "browser",
+    "cosmos",
+    "native"
+  ],
   "links": {
     "website": "https://eightsaf.io/",
     "docs": "https://docs.safrochain.com",
     "github": "https://github.com/Eightblockchain/eightsaf",
     "x": "https://twitter.com/safrochain"
   },
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-06-11"
+  "updatedAt": "2026-08-11",
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://eightsaf.io/"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://eightsaf.io/"
+    }
+  }
 }

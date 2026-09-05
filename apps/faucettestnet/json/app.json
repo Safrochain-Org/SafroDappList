@@ -7,12 +7,25 @@
   "description": "The faucet distributes test tokens so builders and testers can deploy contracts and validate flows without real value at stake. Safrochain.com lists it as a live testnet resource; the exact URL is available in the Developers section or the documentation.",
   "url": "https://faucet.safrochain.com/",
   "status": "live",
-  "chains": ["safrochain-testnet"],
+  "chains": [
+    "safrochain-testnet"
+  ],
   "category": "tooling",
-  "tags": ["testnet", "faucet", "fees", "developers"],
+  "tags": [
+    "testnet",
+    "faucet",
+    "fees",
+    "developers"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "links": {
     "docs": "https://docs.safrochain.com"
+  },
+  "deployments": {
+    "testnet": {
+      "live": true,
+      "url": "https://faucet.safrochain.com/"
+    }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "momotrack",
+  "name": "MoMoTrack",
+  "shortDescription": "Open-source oracle that attests Mobile Money payments on Safrochain — verifiable receipts without screenshots.",
+  "description": "MoMoTrack Oracle brings Mobile Money (MoMo) transaction verification on-chain for Africa. It is a verification and provenance layer on top of licensed aggregators (PowerPay, Cotanipay, and others) — not a financial intermediary.\n\nDevelopers integrate the MoMoTrack SDK client-side; successful payments are attested with privacy-preserving proofs, validated by the oracle, and recorded immutably on Safrochain. P2P apps, remittance platforms, tontines, and DeFi protocols get cryptographic payment proof instead of manual reconciliation or screenshot disputes.",
+  "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle",
+  "status": "concept",
+  "statusNote": "Oracle and SDK in development — follow the repo for release announcements.",
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
+  "category": "infrastructure",
+  "tags": [
+    "soon",
+    "oracle",
+    "mobile-money",
+    "verification",
+    "africa",
+    "sdk"
+  ],
+  "links": {
+    "github": "https://github.com/Safrochain-Org/MoMoTrack-Oracle",
+    "docs": "https://github.com/Safrochain-Org/MoMoTrack-Oracle/blob/main/docs/HOW_IT_WORKS.md"
+  },
+  "isOpenSource": true,
+  "license": "MIT",
+  "submittedAt": "2026-06-27",
+  "updatedAt": "2026-08-11",
+  "deployments": {
+    "mainnet": {
+      "live": false,
+      "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+    },
+    "testnet": {
+      "live": false,
+      "url": "https://github.com/Safrochain-Org/MoMoTrack-Oracle"
+    }
+  }
+}

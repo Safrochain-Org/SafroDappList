@@ -4,15 +4,27 @@
   "slug": "explorertestnet",
   "name": "Testnet Explorer",
   "shortDescription": "Block explorer: transactions, validators, chain height, and direct links to individual txs.",
-  "description": "The testnet explorer lets you track on-chain activity in real time — accounts, delegations, SAF transfers, and Cosmos SDK messages. It is the go-to tool for debugging integrations before mainnet (explorer.testnet.safrochain.com).",
-  "url": "https://explorer.testnet.safrochain.com/",
+  "description": "The testnet explorer lets you track on-chain activity in real time — accounts, delegations, SAF transfers, and Cosmos SDK messages. It is the go-to tool for debugging integrations before mainnet (testnet.safrochain.network).",
+  "url": "https://testnet.safrochain.network/",
   "status": "live",
-  "chains": ["safrochain-testnet"],
+  "chains": [
+    "safrochain-testnet"
+  ],
   "category": "analytics",
-  "tags": ["explorer", "blocks", "validators"],
+  "tags": [
+    "explorer",
+    "blocks",
+    "validators"
+  ],
   "submittedAt": "2026-04-06",
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-08-11",
   "links": {
     "docs": "https://docs.safrochain.com"
+  },
+  "deployments": {
+    "testnet": {
+      "live": true,
+      "url": "https://testnet.safrochain.network/"
+    }
   }
 }

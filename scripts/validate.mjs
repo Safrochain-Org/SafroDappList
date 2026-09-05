@@ -112,6 +112,21 @@ for (const folderSlug of dirs) {
     }
   }
 
+  const deployments = manifest.deployments;
+  if (deployments && typeof deployments === "object") {
+    for (const network of ["mainnet", "testnet"]) {
+      const entry = deployments[network];
+      if (!entry || typeof entry !== "object") continue;
+      if (entry.live === true) {
+        if (typeof entry.url !== "string" || !/^https:\/\//.test(entry.url)) {
+          errors.push(
+            `${relManifest}: deployments.${network}.url is required (https) when live is true.`,
+          );
+        }
+      }
+    }
+  }
+
   if (typeof manifest.slug === "string" && slugsSeen.has(manifest.slug)) {
     errors.push(`Duplicate slug ${JSON.stringify(manifest.slug)} in ${relManifest}`);
   }

@@ -7,13 +7,31 @@
   "description": "The Safrochain IBC Bridge lets you send and receive tokens between Safrochain and the wider Cosmos ecosystem via the Inter-Blockchain Communication protocol. A dedicated interface for initiating cross-chain transactions seamlessly.",
   "url": "https://bridge.safrochain.com/",
   "status": "live",
-  "chains": ["safrochain-mainnet", "safrochain-testnet"],
+  "chains": [
+    "safrochain-mainnet",
+    "safrochain-testnet"
+  ],
   "category": "bridge",
-  "tags": ["ibc", "bridge", "tokens", "crosschain"],
+  "tags": [
+    "ibc",
+    "bridge",
+    "tokens",
+    "crosschain"
+  ],
   "links": {
     "docs": "https://docs.safrochain.com",
     "x": "https://twitter.com/safrochain"
   },
   "submittedAt": "2026-04-15",
-  "updatedAt": "2026-04-15"
+  "updatedAt": "2026-08-11",
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://bridge.safrochain.com/"
+    },
+    "testnet": {
+      "live": true,
+      "url": "https://bridge.safrochain.com/"
+    }
+  }
 }
