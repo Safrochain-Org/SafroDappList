@@ -969,9 +969,46 @@
       "updatedAt": "2026-08-11",
       "url": "https://winsaf.xyz/",
       "version": "1.0.0"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "wallet",
+      "chains": [
+        "safrochain-mainnet"
+      ],
+      "deployments": {
+        "mainnet": {
+          "live": true,
+          "url": "https://zunialab.com"
+        }
+      },
+      "description": "Self-custody wallet for the Cosmos ecosystem. Hold, send, and stake from a browser extension and a phone that share the same keys. No account, no token.",
+      "links": {
+        "website": "https://zunialab.com"
+      },
+      "logoPath": "apps/zunia/img/logo.png",
+      "manifestPath": "apps/zunia/json/app.json",
+      "name": "Zunia",
+      "schemaVersion": 2,
+      "shortDescription": "Self-custody wallet for the Cosmos ecosystem. Hold, send, and stake from a browser extension and a phone that share the same keys. No account, no token.",
+      "slug": "zunia",
+      "status": "live",
+      "statusNote": "Live on Safrochain mainnet.",
+      "submittedAt": "2026-09-29",
+      "tags": [
+        "wallet",
+        "cosmos",
+        "self-custody"
+      ],
+      "team": {
+        "name": "Zunia Lab"
+      },
+      "updatedAt": "2026-09-29",
+      "url": "https://zunialab.com"
     }
   ],
   "featuredSlugs": [
+    "zunia",
     "winsaf",
     "safhandle",
     "dyma",
@@ -982,6 +1019,6 @@
     "pesaex",
     "momotrack"
   ],
-  "generatedAt": "2026-09-04",
+  "generatedAt": "2026-09-29",
   "registryVersion": 1
 }

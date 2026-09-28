@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "zunia",
+  "name": "Zunia",
+  "shortDescription": "Self-custody wallet for the Cosmos ecosystem. Hold, send, and stake from a browser extension and a phone that share the same keys. No account, no token.",
+  "description": "Self-custody wallet for the Cosmos ecosystem. Hold, send, and stake from a browser extension and a phone that share the same keys. No account, no token.",
+  "url": "https://zunialab.com",
+  "status": "live",
+  "statusNote": "Live on Safrochain mainnet.",
+  "chains": [
+    "safrochain-mainnet"
+  ],
+  "category": "wallet",
+  "tags": [
+    "wallet",
+    "cosmos",
+    "self-custody"
+  ],
+  "links": {
+    "website": "https://zunialab.com"
+  },
+  "team": {
+    "name": "Zunia Lab"
+  },
+  "submittedAt": "2026-09-29",
+  "updatedAt": "2026-09-29",
+  "deployments": {
+    "mainnet": {
+      "live": true,
+      "url": "https://zunialab.com"
+    }
+  }
+}
