@@ -766,6 +766,48 @@
     },
     {
       "$schema": "../../../schemas/app.manifest.schema.json",
+      "category": "education",
+      "chains": [
+        "safrochain-testnet"
+      ],
+      "deployments": {
+        "mainnet": {
+          "live": false
+        },
+        "testnet": {
+          "live": false,
+          "url": "https://github.com/sammywasukundi/SafroQuest"
+        }
+      },
+      "description": "SafroQuest is a mobile game and guided on-ramp that turns the official Safrochain documentation into a ranked learning path. Players answer questions, solve riddles, and complete practical missions from Explorer to Smith and Builder ranks, ending with real smart contract deployments on testnet. Every quest produces verified outputs like documentation translations, test reports, and peer-reviewed code.",
+      "isOpenSource": true,
+      "license": "MIT",
+      "links": {
+        "docs": "https://github.com/sammywasukundi/SafroQuest/blob/main/docs/proposal.md",
+        "github": "https://github.com/sammywasukundi/SafroQuest"
+      },
+      "logoPath": "apps/safroquest/img/logo.png",
+      "manifestPath": "apps/safroquest/json/app.json",
+      "name": "SafroQuest",
+      "schemaVersion": 2,
+      "shortDescription": "Learn-and-contribute game for the Safrochain ecosystem turning official documentation into a ranked learning path.",
+      "slug": "safroquest",
+      "status": "concept",
+      "statusNote": "Platform proposal and pilot architecture in development — follow the repo for updates.",
+      "submittedAt": "2026-11-16",
+      "tags": [
+        "soon",
+        "education",
+        "gamification",
+        "cosmwasm",
+        "africa",
+        "sdk"
+      ],
+      "updatedAt": "2026-11-16",
+      "url": "https://github.com/sammywasukundi/SafroQuest"
+    },
+    {
+      "$schema": "../../../schemas/app.manifest.schema.json",
       "category": "governance",
       "chains": [
         "safrochain-mainnet"
@@ -1019,6 +1061,6 @@
     "pesaex",
     "momotrack"
   ],
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-11-16",
   "registryVersion": 1
 }
