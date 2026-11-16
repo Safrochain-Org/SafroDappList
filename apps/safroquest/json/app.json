@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schemas/app.manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "safroquest",
+  "name": "SafroQuest",
+  "shortDescription": "Learn-and-contribute game for the Safrochain ecosystem turning official documentation into a ranked learning path.",
+  "description": "SafroQuest is a mobile game and guided on-ramp that turns the official Safrochain documentation into a ranked learning path. Players answer questions, solve riddles, and complete practical missions from Explorer to Smith and Builder ranks, ending with real smart contract deployments on testnet. Every quest produces verified outputs like documentation translations, test reports, and peer-reviewed code.",
+  "url": "https://github.com/sammywasukundi/SafroQuest",
+  "status": "concept",
+  "statusNote": "Platform proposal and pilot architecture in development — follow the repo for updates.",
+  "chains": [
+    "safrochain-testnet"
+  ],
+  "category": "education",
+  "tags": [
+    "soon",
+    "education",
+    "gamification",
+    "cosmwasm",
+    "africa",
+    "sdk"
+  ],
+  "links": {
+    "github": "https://github.com/sammywasukundi/SafroQuest",
+    "docs": "https://github.com/sammywasukundi/SafroQuest/blob/main/docs/proposal.md"
+  },
+  "isOpenSource": true,
+  "license": "MIT",
+  "submittedAt": "2026-11-16",
+  "updatedAt": "2026-11-16",
+  "deployments": {
+    "mainnet": {
+      "live": false
+    },
+    "testnet": {
+      "live": false,
+      "url": "https://github.com/sammywasukundi/SafroQuest"
+    }
+  }
+}
